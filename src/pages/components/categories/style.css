@@ -1,0 +1,67 @@
+#categories {
+  margin-top: 2rem;
+  padding: .5rem;
+  padding-top: 0;
+}
+
+#nav-div {
+  margin-top: .4rem;
+  height: 2rem;
+}
+
+#nav {
+  height: 2.2rem;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+#category {
+  padding: .4rem;
+  margin-right: 5px;
+  padding-left: .6rem;
+  padding-right: .6rem;
+  border-radius: 10px;
+  height: 1rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+#category:hover {
+  transform: scale(1.05);
+}
+
+#category-icon {
+  margin-right: .5rem;
+}
+
+.nav .one {
+  margin-left: .2rem;
+  background: #fe6442;
+}
+
+.nav .two {
+  background: #848bdd;
+}
+
+.nav .three {
+  background: #a86db7;
+}
+
+.nav .four {
+  background: #E675C0;
+}
+
+.nav .five {
+  background: #29E96B;
+}
+
+.nav .six {
+  background: #F18817;
+}
+
+.nav .seven {
+  background: #929EE2;
+}

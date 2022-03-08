@@ -1,0 +1,95 @@
+#sell-buy-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#sell-buy-wrap {
+  margin: .2rem;
+  padding: .4rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-top: .5rem;
+}
+
+
+#sell-buy-wrap h4 {
+  margin: .3rem;
+  margin-bottom: 1rem;
+}
+
+#sell-buy {
+  display: flex;
+}
+
+#sell-buy button {
+  height: 2rem;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #008fed;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+#sell-buy button:hover {
+  transform: scale(1.02);
+}
+
+#buy {
+  flex: 50%;
+  margin-right: .3rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#sell {
+  flex: 50%;
+  margin-left: .3rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#sell-buy-options {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+
+#sell-buy-text {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  transition: 0.2s;
+}
+#sell-buy-location {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  transition: 0.2s;
+}
+#sell-buy-photo {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+#icon {
+  font-size: 1.3rem;
+  margin-right: .2rem;
+  color: #008fed !important;
+}
+
+#sell-buy-photo:hover, #sell-buy-location:hover, #sell-buy-text:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+  color: #008fed !important;
+}
