@@ -1,0 +1,66 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#head-wrap {
+  display: flex;
+  align-items: center;
+  padding: 1rem .3rem;
+}
+
+#prof-pic-wrap {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+#search-wrap {
+  flex: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  padding-left: 1rem;
+  padding-right: .2rem;
+}
+
+#search-input {
+  width: 90%;
+  height: 35px;
+  font-size: 15px;
+  padding-left: .4rem;
+  border: none;
+  background: white;
+  border-radius: 20px;
+}
+  
+#search-input:focus {
+  outline: none;
+}
+
+#notif-wrap {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+#notif-icon {
+  position: relative;
+  color: #0F2065;
+}
+
+#notif-badge {
+  position: absolute;
+  border-radius: 50%;
+  padding: .103rem .3rem;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  background: red;
+  margin-top: -8px;
+  margin-right: -15px;
+  border: 1px solid white;
+}

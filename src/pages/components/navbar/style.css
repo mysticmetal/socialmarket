@@ -1,0 +1,50 @@
+#navbar-wrap {
+  position:fixed;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:1030;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+#home-wrap {
+  flex: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wanted-wrap {
+  flex: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#store-wrap {
+  flex: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-icon {
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+
+#nav-icon:hover {
+  border-bottom: 2px solid  #007DFF;
+  padding-bottom: 3px;
+  color:  #007DFF;
+}
+
+.is-active {
+  border-bottom: 2px solid  #007DFF;
+  padding-bottom: 3px;
+  color:  #007DFF;
+}
