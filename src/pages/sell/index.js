@@ -8,7 +8,9 @@ function Sell() {
     <div>
       <div id="sell-page-wrap">
         <SimpleNavBar operation="venda"/>
-        <SellBody />
+        <div className="container-wrap">
+          <SellBody />
+        </div>
       </div>
     </div>
   );

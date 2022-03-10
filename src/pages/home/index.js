@@ -12,8 +12,10 @@ function HomePage() {
       <div id="home-body">
         <Header />
         <SellBuy />
-        <Categories />
-        <Products />
+        <div className="container-wrap">
+          <Categories />
+          <Products />
+        </div>
       </div>
       <NavBar /> 
     </div>

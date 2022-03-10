@@ -5,7 +5,9 @@ function BuyPage() {
   return(
     <div>
       <SimpleNavBar operation="compra" />
-      <BuyBody />
+      <div className="container-wrap">
+        <BuyBody />
+      </div>
     </div>
   );
 }
