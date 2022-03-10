@@ -10,7 +10,7 @@
 #product {
   display: flex;
   border-top: .1rem solid lightgray;
-  padding-top: .3rem;
+  padding-top: .5rem;
   padding-bottom: .2rem;
   margin-bottom: .3rem;
   padding-right: .1rem;
@@ -34,7 +34,7 @@
 
 #product-name {
   font-size: 1.1rem;
-  color: #828282;
+  color: #3B444B;
 }
 
 #product-desc {
@@ -45,8 +45,14 @@
 
 #product-pric {
   font-size: 1rem;
-  color: #201A1D;
+  color: white;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background: #4682B4;
   margin-top: .2rem;
+  padding: .2rem;
 }
 
 #product-actions {
@@ -54,7 +60,7 @@
   flex: 100%;
   align-items: center;
   justify-content: flex-end;
-  margin-top: .4rem;
+  margin-top: .6rem;
 }
 
 #add-cart {

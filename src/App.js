@@ -1,9 +1,22 @@
-import HomePage from './pages/home/index.js';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import './App.css';
+
+import HomePage from './pages/home/index';
+import BuyPage from './pages/buy/index';
+import SellPage from './pages/sell/index';
 
 function App() {
   return (
     <div>
-      <HomePage />
+      <Routes>
+        <Route exact path="/" element={ <HomePage />} />
+        <Route path="buy/" element={ <BuyPage />} />
+        <Route path="sell/" element={ <SellPage />} />
+      </Routes>
     </div>
   );
 }
