@@ -27,7 +27,7 @@
   padding-right: .2rem;
 }
 
-#search-input {
+#header-search-input {
   width: 90%;
   height: 35px;
   font-size: 15px;
@@ -37,7 +37,7 @@
   border-radius: 20px;
 }
   
-#search-input:focus {
+#header-search-input:focus {
   outline: none;
 }
 

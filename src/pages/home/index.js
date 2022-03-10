@@ -1,10 +1,10 @@
 import './style.css';
 
 import Header from './../components/header/index';
-import SellBuy from './../components/sell-buy/index';
-import Categories from './../components/categories/index';
+import SellBuy from './../components/publish/index';
+import Categories from './../components/products-categories/index';
 import Products from './../components/products/index';
-import NavBar from './../components/navbar/index';
+import NavBar from './../components/bottom-navbar/index';
 
 function HomePage() {
   return(

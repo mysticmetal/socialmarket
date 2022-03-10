@@ -13,7 +13,7 @@ function Header() {
 
         <div id="search-wrap">
           <Search />
-          <input id="search-input" type="search" placeholder="procura um artigo..." />
+          <input id="header-search-input" type="search" placeholder="procura um artigo..." />
         </div>
 
         <div id="notif-wrap">
