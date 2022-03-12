@@ -16,27 +16,50 @@ function SellBody() {
 
   const navigate = useNavigate();
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImages, setSelectedImages] = useState([]);
 
   function handleOnChange(e) {
-    if(e.target.files[0]) {
-      const reader = new FileReader();
-      reader.addEventListener('load', () => {
-        setSelectedImage(reader.result);
-        document.querySelector(".uploaded-image").style.display='flex';
-        document.querySelector(".trash-icon").style.display='block';
+    if(e.target.files) {
+      const newSelectedImages = Array.from(e.target.files).map(file => 
+        { 
+          return {
+            id: Math.random(), 
+            image: URL.createObjectURL(file)
+          } 
       });
-      reader.readAsDataURL(e.target.files[0]);
+
+      setSelectedImages((selectedImages) => selectedImages.concat(newSelectedImages));
+      Array.from(e.target.files).map(file => URL.revokeObjectURL(file));
     }
   }
 
-  function handleDescardSelectedImage() {
-    document.querySelector(".uploaded-image").style.display='none';
-    document.querySelector(".trash-icon").style.display='none';
-    setSelectedImage(null);
+  function handleDiscardImage(id) {
+    const imageIndex = selectedImages.findIndex( image => image.id === id);
+    const newSelectedImages = [...selectedImages];
+    newSelectedImages.splice(imageIndex, 1);
+    setSelectedImages(newSelectedImages);
   }
 
+  const renderUploadedImages = images => {
+    return images.map( image => {
+      return(
+        <div key={ image.id } className="uploaded-image-wrap">
+          <img
+            src={image.image}
+            className="show-uploaded-image"
+            alt="not found"
+          />
 
+          <Trash
+            className="trash-icons"
+            onClick={ () => handleDiscardImage(image.id) }
+          />
+        </div>
+      );
+
+    });
+  }
+  
   return(
     <div>
       <div className="sell-body-wrap container">
@@ -46,18 +69,8 @@ function SellBody() {
           <ProductDescriptionInput />
           <PriceInput isRequired={true} />
 
-
-          <div className="uploaded-image">
-            <img
-              src={selectedImage}
-              className="uploaded-image-show"
-              alt="not found"
-            />
-
-            <Trash
-              className="trash-icon"
-              onClick={ () => handleDescardSelectedImage() }
-            />
+          <div className="uploaded-images-wrap" >
+            { renderUploadedImages(selectedImages) }
           </div>
 
           <input
@@ -84,7 +97,6 @@ function SellBody() {
           
           <ContactInfo />
 
-
           <button
             onClick={ () => navigate('/') }
             className="large-button  submit-button"
@@ -92,6 +104,7 @@ function SellBody() {
           >
             Publicar
           </button>
+
         </form>
       </div>
     </div>

@@ -9,15 +9,13 @@ import NavBar from './../components/bottom-navbar/index';
 function HomePage() {
   return(
     <div>
-      <div id="home-body">
-        <Header />
-        <SellBuy />
-        <div className="container-wrap">
-          <Categories />
-          <Products />
-        </div>
+      <Header />
+      <SellBuy />
+      <div className="container-wrap mb-3">
+        <Categories />
+        <Products />
       </div>
-      <NavBar /> 
+      <NavBar />
     </div>
   );
 }

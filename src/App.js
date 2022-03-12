@@ -8,6 +8,7 @@ import './assets/css/common-styles.css';
 import HomePage from './pages/home/index';
 import BuyPage from './pages/buy/index';
 import SellPage from './pages/sell/index';
+import WantedProducts from './pages/wanted-products/index';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" element={ <HomePage />} />
         <Route path="buy/" element={ <BuyPage />} />
         <Route path="sell/" element={ <SellPage />} />
+        <Route path="wanted/" element={ <WantedProducts />} />
       </Routes>
     </div>
   );

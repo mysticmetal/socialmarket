@@ -1,0 +1,29 @@
+.uploaded-images-wrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.uploaded-image-wrap {
+  margin-right: .5rem;
+  display: flex;
+}
+
+.show-uploaded-image {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  margin-top: .5rem;
+  margin-bottom: .3rem;
+  position: relative;
+}
+
+.trash-icons {
+  position: absolute;
+  margin-left: 3.1rem;
+  margin-top: .7rem;
+  padding: .4rem;
+  background: white;
+  color: red;
+  font-weight: bold;
+}
