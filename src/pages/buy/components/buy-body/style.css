@@ -3,6 +3,7 @@
   width: 100%;
   border: none;
   height: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: .4rem;
   font-size: 1.1rem;
   border-radius: 10px;
@@ -21,7 +22,7 @@
 }
 
 .uploaded-image {
-  display: none;
+  display: flex;
 }
 
 .uploaded-image-show {
@@ -35,7 +36,6 @@
 
 .trash-icon {
   position: absolute;
-  display: none;
   margin-left: 6.1rem;
   margin-top: .7rem;
   padding: .4rem;

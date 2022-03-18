@@ -1,12 +1,12 @@
 import './style.css';
 import { AddLocation } from './../common-inputs/index';
 
-function ContactInfo() {
+function ContactInfo(props) {
   return(
     <div>
       <div className="contact-info-wrap">
         <p>Informações de contacto</p>
-        <small className="muted-text" >escolha a forma pela qual os seus clientes poderam entrar em contacto para aquisição do produto(s)</small>
+        <small className="muted-text" >{ props.text ? props.text : "escolha a forma pela qual os seus clientes poderam entrar em contacto para aquisição do produto(s)" }</small>
         
         <label className="common-input-label">Telefone</label>
         <div className="phone-contact-wrap">

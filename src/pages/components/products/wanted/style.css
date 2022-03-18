@@ -1,0 +1,16 @@
+.product-pric-wanted {
+  margin-top: .1rem;
+  font-size: .9rem;
+}
+
+.wanted-price {
+  padding: .4rem;
+  background-color: #4682B4;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.product-interests {
+  font-size: .8rem;
+}

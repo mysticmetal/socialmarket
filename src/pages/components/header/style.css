@@ -3,19 +3,19 @@
   padding: 0px;
 }
 
-#head-wrap {
+.head-wrap {
   display: flex;
   align-items: center;
   padding: 1rem .3rem;
 }
 
-#prof-pic-wrap {
+.prof-pic-wrap {
   flex: 20%;
   display: flex;
   justify-content: center;
 }
 
-#search-wrap {
+.search-wrap {
   flex: 60%;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
   padding-right: .2rem;
 }
 
-#header-search-input {
+.header-search-input {
   width: 90%;
   height: 35px;
   font-size: 15px;
@@ -37,22 +37,22 @@
   border-radius: 20px;
 }
   
-#header-search-input:focus {
+.header-search-input:focus {
   outline: none;
 }
 
-#notif-wrap {
+.notif-wrap {
   flex: 20%;
   display: flex;
   justify-content: center;
 }
 
-#notif-icon {
+.notif-icon {
   position: relative;
   color: #0F2065;
 }
 
-#notif-badge {
+.notif-badge {
   position: absolute;
   border-radius: 50%;
   padding: .103rem .3rem;

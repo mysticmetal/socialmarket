@@ -1,15 +1,15 @@
-#categories {
-  margin-top: 2rem;
+.categories {
+  margin-top: 1rem;
   padding: .5rem;
   padding-top: 0;
 }
 
-#nav-div {
+.nav-div {
   margin-top: .4rem;
   height: 2rem;
 }
 
-#nav {
+.nav {
   height: 2.2rem;
   padding-top: 3px;
   padding-bottom: 1px;
@@ -33,7 +33,7 @@
   transform: scale(1.05);
 }
 
-#category-icon {
+.category-icon {
   margin-right: .5rem;
 }
 

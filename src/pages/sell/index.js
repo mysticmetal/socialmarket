@@ -1,7 +1,7 @@
 import './style.css';
 
 import SimpleNavBar from './../components/simple-navbar/index';
-import SellBody from './../components/sell-body/index';
+import SellBody from './components/sell-body/index';
 
 function Sell() {
   return(

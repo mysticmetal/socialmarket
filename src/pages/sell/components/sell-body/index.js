@@ -7,9 +7,9 @@ import './style.css';
 import { ProductNameInput,
   ProductDescriptionInput,
   PriceInput,
-} from './../common-inputs/index';
+} from './../../../components/common-inputs/index';
 
-import ContactInfo from './../contact-info/index';
+import ContactInfo from './../../../components/contact-info/index';
 
 
 function SellBody() {

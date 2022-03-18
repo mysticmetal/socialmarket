@@ -1,5 +1,5 @@
 import SimpleNavBar from './../components/simple-navbar/index';
-import BuyBody from './../components/buy-body/index';
+import BuyBody from './components/buy-body/index';
 
 function BuyPage() {
   return(
