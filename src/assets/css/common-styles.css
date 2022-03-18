@@ -1,3 +1,8 @@
+.container-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .container {
   margin-left: 1rem;
   margin-right: 1rem;

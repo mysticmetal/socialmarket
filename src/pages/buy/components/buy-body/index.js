@@ -7,31 +7,27 @@ import { FileImage, Trash } from 'react-bootstrap-icons';
 import { ProductNameInput,
   ProductDescriptionInput,
   PriceInput,
-  AddLocation
-} from './../common-inputs/index.js';
+} from './../../../components/common-inputs/index';
+import ContactInfo from './../../../components/contact-info/index';
 
 
 function BuyBody() {
   const navigate = useNavigate();
 
-  const [selectedImage, setSelectedImage] = useState(null);  
+  const [selectedImage, setSelectedImage] = useState([]);  
   
   function handleOnChange(e) {
     if(e.target.files[0]) {
       const reader = new FileReader();
       reader.addEventListener('load', () => {
-        setSelectedImage(reader.result);
-        document.querySelector(".uploaded-image").style.display='flex';
-        document.querySelector(".trash-icon").style.display='block';
+        setSelectedImage([reader.result]);
       });
       reader.readAsDataURL(e.target.files[0]);
     }
   }
 
   function handleDescardSelectedImage() {
-    document.querySelector(".uploaded-image").style.display='none';
-    document.querySelector(".trash-icon").style.display='none';
-    setSelectedImage(null);
+    setSelectedImage([]);
   }
 
   return(
@@ -42,20 +38,21 @@ function BuyBody() {
           <ProductNameInput />
           <ProductDescriptionInput />
           <PriceInput isMaxPrice={true} />
-          <AddLocation />
+          
+          { selectedImage.map( image => (
+            <div className="uploaded-image">
+              <img 
+                src={image} 
+                className="uploaded-image-show"  
+                alt="not found" 
+              />
 
-          <div className="uploaded-image">
-            <img 
-              src={selectedImage} 
-              className="uploaded-image-show"  
-              alt="not found" 
-            />
-
-            <Trash 
-              className="trash-icon" 
-              onClick={ () => handleDescardSelectedImage() } 
-            />  
-          </div>
+              <Trash 
+                className="trash-icon" 
+                onClick={ () => handleDescardSelectedImage() } 
+              />  
+            </div>
+          ))}
 
           <input 
             onChange={ e => handleOnChange(e) }  
@@ -77,6 +74,8 @@ function BuyBody() {
             /> 
             Carregar Imagem
           </button>
+
+          <ContactInfo text="escolha a forma pela qual os vendedores poderam entrar em contacto."/> 
 
           <button 
             onClick={ () => navigate('/') }  

@@ -5,20 +5,20 @@ import { Search, BellFill } from 'react-bootstrap-icons';
 function Header() {
   return(
     <div>
-      <div id="head-wrap">
+      <div className="head-wrap">
 
-        <div id="prof-pic-wrap">
+        <div className="prof-pic-wrap">
           <ProfilePicture />
         </div>
 
-        <div id="search-wrap">
+        <div className="search-wrap">
           <Search />
-          <input id="header-search-input" type="search" placeholder="procura um artigo..." />
+          <input className="header-search-input" type="search" placeholder="procura um artigo..." />
         </div>
 
-        <div id="notif-wrap">
-          <BellFill size="1.4rem" id="notif-icon"/>
-          <span id="notif-badge" >5</span>
+        <div className="notif-wrap">
+          <BellFill size="1.4rem" className="notif-icon"/>
+          <span className="notif-badge" >5</span>
         </div>
 
       </div>

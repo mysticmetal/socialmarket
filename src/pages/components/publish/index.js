@@ -8,34 +8,34 @@ function SellBuy() {
   let navigate = useNavigate();
 
   return(
-    <div id="sell-buy-container">
-      <div id="sell-buy-wrap">
+    <div className="container-wrap">
+      <div className="sell-buy-wrap">
         <h4><b>Oque desejas?</b></h4>
-        <div id="sell-buy">
+        <div className="sell-buy">
           <button 
             onClick={ () => navigate("/buy")}  
-            id="buy" 
+            className="buy-btn" 
           >
             Comprar
           </button>
           <button 
             onClick={ () => navigate("/sell")}  
-            id="sell" 
+            className="sell-btn" 
           >
             Vender
           </button>
         </div>
-        <div id="sell-buy-options">
-          <div id="sell-buy-text">
-            <div><PencilSquare id="icon" /></div>
+        <div className="sell-buy-options">
+          <div className="sell-buy-text">
+            <div><PencilSquare className="icon" /></div>
             <div><span>Texto</span></div>
           </div>
-          <div id="sell-buy-location">
-            <div><ShopWindow id="icon" /></div>
+          <div className="sell-buy-location">
+            <div><ShopWindow className="icon" /></div>
             <div><span>Nova Loja</span></div>
           </div>
-          <div id="sell-buy-photo">            
-            <div><Image id="icon" /></div>
+          <div className="sell-buy-photo">            
+            <div><Image className="icon" /></div>
             <div><span>Photo</span></div>
           </div>
         </div>
