@@ -10,12 +10,12 @@ function WantedProducts() {
     <>
       <Header />
       <div className="container-wrap">
-        <h2 className="wanted-products-title" >Lista de Productos que os clientes estao a procura</h2>
+        <h2 className="products-title-bordered" >Lista de Productos que os clientes estao a procura</h2>
         <Categories />
         <div style={{ marginBottom: "3.5rem"  }}  className="wanted-products-wrap">
           <Products />
         </div>
-        <NavBar />
+        <NavBar menuId={2} />
       </div>
     </>
   );

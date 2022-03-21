@@ -16,9 +16,14 @@ function Product(props) {
             <h6 className="product-desc" >{ props.description }</h6>
 
             { 
-              props.flag === 0 ? <h6 className="product-pric" >$ { props.price }</h6> : 
+              props.flag === 0 ? <div className="product-pric-selled-wrap">
+                <h6 className="common-product-pric" >
+                  Preço : <small className="wanted-price" >$ { props.price }</small>
+                </h6> 
+              </div> 
+              : 
               <div className="product-pric-wanted-wrap" >
-                <h6 className="product-pric-wanted" >
+                <h6 className="common-product-pric" >
                   preço máximo: <small className="wanted-price" >$ { props.price }</small>
                 </h6> 
                 <small className="muted-text product-interests">

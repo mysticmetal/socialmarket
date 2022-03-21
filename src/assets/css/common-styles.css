@@ -23,3 +23,9 @@
   background: white;
   font-weight: bold;
 }
+
+.products-title-bordered {
+  margin: 1rem .8rem;
+  border-left: .3rem solid #4682B4;
+  padding-left: .3rem;
+}

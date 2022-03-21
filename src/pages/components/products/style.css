@@ -50,16 +50,9 @@
   }
 }
 
-.product-pric {
+.common-product-pric {
+  margin-top: .3rem;
   font-size: 1rem;
-  color: white;
-  width: 4rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  background: #4682B4;
-  margin-top: .2rem;
-  padding: .2rem;
 }
 
 .product-actions {
