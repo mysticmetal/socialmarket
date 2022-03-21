@@ -12,15 +12,15 @@ This simple and functional application allows users to sell and buy their produc
 * Mongodb
 
 # Requirements
-1 NodeJs
-2 yarn
+1 NodeJs <br/>
+2 yarn <br/>
 
 # Installation
 
-1 clone the respostory : https:github.com/edilson258/socialmarket.git
-2 cd socialmarket
-3 yarn install
-4 yar start
+1 clone the respostory : https:github.com/edilson258/socialmarket.git <br/>
+2 cd socialmarket <br/>
+3 yarn install <br/>
+4 yar start <br/>
 
 
 
