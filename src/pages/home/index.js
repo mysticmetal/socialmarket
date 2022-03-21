@@ -15,7 +15,7 @@ function HomePage() {
         <Categories />
         <Products />
       </div>
-      <NavBar />
+      <NavBar menuId={1} />
     </div>
   );
 }
